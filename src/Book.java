@@ -62,9 +62,8 @@ public class Book {
         this.LSBN = LSBN;
         this.book_title = book_title;
         this.author_name = author_name;
-        this.price = price;
-        Book  data=new Book(LSBN,book_title,author_name,price);
-        Data.put(LSBN,data);
+        this.price = price;      
+        Data.put(LSBN,this);
         Book_Storage.put(LSBN,Book_Storage.getOrDefault(LSBN,0)+1);
     }
 }
